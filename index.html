@@ -3,11 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+header_image: /assets/images/header_image_1280x895.png
 ---
 
 <div class="extended-content-container" style="margin-bottom: 3em;">
     <div class="extended-content">
-        <img class="header-image" src="{{ '/assets/images/header_image_1280x895.png' | relative_url }}" alt="Canaletto's view of Venice">
+        <img class="header-image" src="{{ page.header_image | relative_url }}" alt="Canaletto's view of Venice">
     </div>
 </div>
 <p>Arty is an image viewer for art history. Organize your images, annotate, view
@@ -19,8 +20,8 @@ layout: home
 
 <div class="extended-content-container">
     <div class="extended-content">
-        <div class="col-6" style="background-color: rgb(61, 61, 61); color: white; padding: 1em;">
-            <p>Text</p>
+        <div class="col-6 text-col" style="background-color: rgb(61, 61, 61); color: white;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu scelerisque nibh, in pulvinar libero. Curabitur congue elit non sapien faucibus dictum. Proin vitae tempor nisi. Donec convallis est vel faucibus dapibus. Duis ipsum ligula, laoreet et convallis tincidunt, hendrerit eu purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eleifend enim ac nunc tempor lacinia.</p>
         </div>
         <div class="col-6">
             <img src="{{ '/assets/images/main_view.png' | relative_url }}" alt="Arty's main view" style="width: 100%">
@@ -60,4 +61,5 @@ layout: home
             </button>
         </a>
     </div>
+    <span class="helper">Version beta-1.0</span>
 </div>

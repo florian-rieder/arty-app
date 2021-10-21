@@ -1,15 +1,4 @@
-.page-heading {
-    font-size: 42pt;
-}
-h1 {
-    font-size: 38pt;
-}
-h2 {
-    font-size: 28pt;
-}
-h3 {
-    font-size: 22pt;
-}
+@import "../theme-overrides.scss";
 
 .footer-nav {
     display: flex;
@@ -39,6 +28,13 @@ h3 {
     letter-spacing: -1pt;
 
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.text-col {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 15em;
+    padding-right: 15em;
 }
 
 /* For mobile phones: */
@@ -86,24 +82,15 @@ h3 {
     }
 }
 
-.page-content { 
-    padding: 30px 0;
-    flex: 1 0 auto;
-    overflow: hidden; // added to enable extended-content-container
-}
-// /** Wrapper */
-// .wrapper { max-width: calc(800px - (30px)); margin-right: auto; margin-left: auto; padding-right: 15px; padding-left: 15px; margin: 0 auto;}
-// @media screen and (min-width: 800px) { .wrapper { max-width: calc(800px - (30px * 2)); padding-right: 30px; padding-left: 30px; margin: 0 auto;} }
-
-.extended-content-container{
+.extended-content-container {
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
 }
 
 .extended-content {
-    width:100%;
-    text-align:center;
+    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: row;
 }
@@ -114,7 +101,7 @@ h3 {
     }
 }
 
-.header-image{
+.header-image {
     margin-top: -30px; // counter .page-content padding
     width: 100vw;
     height: 300px;
@@ -132,3 +119,10 @@ div.card-text-container {
     text-align: center;
     padding: 1em;
 }
+
+.helper {
+    color: grey;
+    font-size: 10pt;
+}
+
+
