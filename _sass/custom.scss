@@ -1,10 +1,19 @@
 // Custom CSS
 
-#big{
-    font-size: 4em;
-    letter-spacing: -1px;
-    margin: 0.5em;
-    color: rgb(136, 83, 83);
+$arty-primary-color: rgb(255, 0, 98);
+$arty-dark-color: rgb(196, 19, 86);
+
+.page-heading{
+    font-size: 42pt;
+}
+h1{
+    font-size: 38pt;
+}
+h2{
+    font-size: 28pt;
+}
+h3{
+    font-size: 22pt;
 }
 
 .footer-nav{
@@ -13,5 +22,47 @@
 
     a {
         margin: 0.25em;
+        color: rgb(43, 43, 43);
     }
+}
+
+.download-btn{
+    cursor: pointer;
+    background-color: $arty-primary-color;
+
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 1em;
+
+    border: 3px solid $arty-dark-color;
+    border-radius: 30px;
+
+    font-size: 3em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: -1pt;
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }

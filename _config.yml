@@ -28,6 +28,10 @@ url: https://florian-rieder.github.io # the base hostname and protocol for your 
 baseurl: /arty-app                    # place folder name if the site is served in a subfolder
 permalink: /:title/
 
+download_link_mac: https://github.com/florian-rieder/Arty/releases/download/v1.0-beta/Arty_beta-1.0_OSX.pkg
+download_link_win: https://github.com/florian-rieder/Arty/releases/download/v1.0-beta/Arty_beta-1.0_WIN.exe
+
+
 #twitter_username: RiederFlorian
 github_username:  florian-rieder
 
@@ -35,7 +39,7 @@ github_username:  florian-rieder
 remote_theme: jekyll/minima 
 
 minima:
-  skin: dark
+  skin: classic
 
 plugins:
   - jekyll-feed
