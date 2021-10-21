@@ -1,0 +1,12 @@
+{% if include.link %}
+<a href="{{ include.link }}" style="text-decoration: none; color: black;">
+{% endif %}
+    <div class="card">
+        <img src="{{ include.image | relative_url }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} style="width:100%">
+        <div class="card-text-container">
+            <p>{{ include.text }}</p>
+        </div>
+    </div>
+{% if include.link %}
+</a>
+{% endif %}
