@@ -6,11 +6,7 @@ layout: home
 header_image: /assets/images/header_image_1280x895.png
 ---
 
-<div class="extended-content-container" style="margin-bottom: 3em;">
-    <div class="extended-content">
-        <img class="header-image" src="{{ page.header_image | relative_url }}" alt="Canaletto's view of Venice">
-    </div>
-</div>
+
 <p>Arty is an image viewer for art history. Organize your images, annotate, view
     and compare, and export to Powerpoint presentation.</p>
 
@@ -18,12 +14,12 @@ header_image: /assets/images/header_image_1280x895.png
 
 <h2>Features</h2>
 
-<div class="extended-content-container">
-    <div class="extended-content">
-        <div class="col-6 text-col" style="background-color: rgb(61, 61, 61); color: white;">
+<div class="extended-content-container" style="margin-bottom: 3em;">
+    <div class="extended-content container">
+        <div class="col-2 text-col" style="background-color: rgb(61, 61, 61); color: white;">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu scelerisque nibh, in pulvinar libero. Curabitur congue elit non sapien faucibus dictum. Proin vitae tempor nisi. Donec convallis est vel faucibus dapibus. Duis ipsum ligula, laoreet et convallis tincidunt, hendrerit eu purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eleifend enim ac nunc tempor lacinia.</p>
         </div>
-        <div class="col-6">
+        <div class="col-2">
             <img src="{{ '/assets/images/main_view.png' | relative_url }}" alt="Arty's main view" style="width: 100%">
         </div>
     </div>
@@ -46,20 +42,20 @@ header_image: /assets/images/header_image_1280x895.png
 
 <h2>Downloads</h2>
 
-<div style="display: inline">
-    <div class="col-6">
+<div class="container">
+    <div class="col-2">
         <a href="{{ site.download_link_mac }}">
             <button class="download-btn">
                 <i class="fab fa-apple"></i> <span style="margin-left: 15px">Mac OS</span>
             </button>
         </a>
     </div>
-    <div class="col-6">
+    <div class="col-2">
         <a href="{{ site.download_link_win }}">
             <button class="download-btn">
                 <i class="fab fa-windows"></i> <span style="margin-left: 15px">Windows</span>
             </button>
         </a>
     </div>
-    <span class="helper">Version beta-1.0</span>
 </div>
+<span class="helper">Version {{ site.app_version }}</span>

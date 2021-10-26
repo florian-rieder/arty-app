@@ -23,14 +23,17 @@ title: Arty
 description: >- # this means to ignore newlines until "baseurl:"
   Arty is an image viewer for art history. Organize your images, 
   annotate, view and compare, and export to Powerpoint presentation.
+  Available for Windows & Mac OS.
 domain: florian-rieder.github.io      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://florian-rieder.github.io # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /arty-app                    # place folder name if the site is served in a subfolder
 permalink: /:title/
 
+# custom variables
 download_link_mac: https://github.com/florian-rieder/Arty/releases/download/v1.0-beta/Arty_beta-1.0_OSX.pkg
 download_link_win: https://github.com/florian-rieder/Arty/releases/download/v1.0-beta/Arty_beta-1.0_WIN.exe
-
+app_version: beta-1.0
+###
 
 #twitter_username: RiederFlorian
 github_username:  florian-rieder
