@@ -3,59 +3,86 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-header_image: /assets/images/header_image_1280x895.png
+header_image: /assets/images/perspective_1024.jpg
 ---
 
+<div class="extended-content-container" style="margin-bottom: 3em; margin-top: -30px;">
+    <div class="extended-content">
 
-<p>Arty is an image viewer for art history. Organize your images, annotate, view
-    and compare, and export to Powerpoint presentation.</p>
-
-{% include card.html text="About" image="/assets/images/header_image_1280x895.png" alt="About" link="/arty-app/about" %}
-
-<h2>Features</h2>
-
-<div class="extended-content-container" style="margin-bottom: 3em;">
-    <div class="extended-content container">
-        <div class="col-2 text-col" style="background-color: rgb(61, 61, 61); color: white;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu scelerisque nibh, in pulvinar libero. Curabitur congue elit non sapien faucibus dictum. Proin vitae tempor nisi. Donec convallis est vel faucibus dapibus. Duis ipsum ligula, laoreet et convallis tincidunt, hendrerit eu purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eleifend enim ac nunc tempor lacinia.</p>
-        </div>
-        <div class="col-2">
-            <img src="{{ '/assets/images/main_view.png' | relative_url }}" alt="Arty's main view" style="width: 100%">
-        </div>
-    </div>
-
-</div>
-
-<h3>Organize your images easily</h3>
-
-<p>Keep all of your images organized in folders on your computer. Each folder is
-    a corpus of images that you can open with Arty.
-    Annotate your images with information such as artist, title, datation, etc.</p>
-
-<h3>Compare</h3>
-<p>Compare up to 4 images at a time.</p>
-
-<h3>Export corpus to Powerpoint</h3>
-<p>Export your entire corpus or a selection of images to a Powerpint presentation,
-    which whill be automatically captioned with the images' annotations.</p>
-
-
-<h2>Downloads</h2>
-
-<div class="container">
-    <div class="col-2">
-        <a href="{{ site.download_link_mac }}">
-            <button class="download-btn">
-                <i class="fab fa-apple"></i> <span style="margin-left: 15px">Mac OS</span>
-            </button>
-        </a>
-    </div>
-    <div class="col-2">
-        <a href="{{ site.download_link_win }}">
-            <button class="download-btn">
-                <i class="fab fa-windows"></i> <span style="margin-left: 15px">Windows</span>
-            </button>
-        </a>
+        <section class="hero">
+            <div class="hero-inner">
+                <h1><img src="{{ '/assets/images/icon.png' | relative_url}}" style="width: 1em; height: 1em; margin-right: 0.25em;">Arty</h1>
+                <h2>Boost your productivity with this all-in-one image viewer</h2>
+                <a href="#downloads" class="btn">Download now</a>
+            </div>
+        </section>
     </div>
 </div>
-<span class="helper">Version {{ site.app_version }}</span>
+
+<section>
+    <p>Arty is an image viewer and corpus management tool for art history. Organize your images, annotate, view
+        and compare, and export to Powerpoint presentation.</p>
+
+    <div style="display: inline;">
+        {% include card.html text="About" image="/assets/images/header_image_1280x895.png" alt="About"
+        link="/arty-app/about" %}
+        {% include card.html text="Documentation" image="/assets/images/header_image_1280x895.png" alt="Documentation"
+        link="/arty-app/docs" %}
+    </div>
+</section>
+
+<section>
+    <h2>Features</h2>
+
+    <div class="extended-content-container" style="margin-bottom: 3em;">
+        <div class="extended-content container" style="background-color: rgb(61, 61, 61); color: white;">
+            <div class="col-2 text-col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu scelerisque nibh, in pulvinar
+                    libero. Curabitur congue elit non sapien faucibus dictum. Proin vitae tempor nisi. Donec convallis
+                    est vel faucibus dapibus. Duis ipsum ligula, laoreet et convallis tincidunt, hendrerit eu purus.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Maecenas eleifend enim ac nunc tempor lacinia.</p>
+            </div>
+            <div class="col-2">
+                <img src="{{ '/assets/images/main_view.png' | relative_url }}" alt="Arty's main view"
+                    style="width: 100%">
+            </div>
+        </div>
+    </div>
+    <h3>Organize your images with ease</h3>
+
+    <p>Keep all of your images organized in folders on your computer. Each folder is
+        a corpus of images that you can open with Arty.
+        Annotate your images with information such as artist, title, datation, etc.</p>
+
+    <h3>Compare</h3>
+    <p>Compare up to 4 images at a time.</p>
+
+    <h3>Export corpus to Powerpoint</h3>
+    <p>Export your entire corpus or a selection of images to a Powerpint presentation,
+        which whill be automatically captioned with the images' annotations.</p>
+</section>
+
+<section>
+    <a id="downloads">
+        <h2>Downloads</h2>
+
+        <div class="container">
+            <div class="col-2">
+                <a href="{{ site.download_link_mac }}">
+                    <button class="download-btn">
+                        <i class="fab fa-apple"></i> <span style="margin-left: 15px">Mac OS</span>
+                    </button>
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="{{ site.download_link_win }}">
+                    <button class="download-btn">
+                        <i class="fab fa-windows"></i> <span style="margin-left: 15px">Windows</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <span class="helper">Version {{ site.app_version }}</span>
+    </a>
+</section>

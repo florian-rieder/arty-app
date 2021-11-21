@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Documentation
-permalink: /doc/
+permalink: /docs/
 ---
 
 Welcome to Arty's documentation.

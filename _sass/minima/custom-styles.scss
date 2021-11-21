@@ -19,8 +19,8 @@
     padding-bottom: 1em;
     margin-bottom: 1em;
 
-    border: 3px solid $arty-dark-color;
-    border-radius: 30px;
+    border: 1px solid $arty-dark-color;
+    border-radius: 100px;
 
     font-size: 3em;
     color: white;
@@ -44,7 +44,7 @@
     width: 100%
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
     .container{
         display: flex;
         flex-direction: row;
@@ -56,7 +56,7 @@
     }
     .col-3{
         width: 33.33%;
-        max-width: 50%;
+        max-width: 33.33%;
     }
 }
 
@@ -78,17 +78,12 @@
     }
 }
 
-.header-image {
-    margin-top: -30px; // counter .page-content padding
-    width: 100vw;
-    height: 300px;
-    object-fit: cover;
-}
-
 div.card {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 div.card-text-container {
@@ -103,3 +98,56 @@ div.card-text-container {
 }
 
 
+// HERO
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/arty-app/assets/images/perspective_1024.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white;
+    border-radius: 100px;
+}
