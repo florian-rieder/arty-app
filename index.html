@@ -11,31 +11,39 @@ header_image: /assets/images/perspective_1024.jpg
 
         <section class="hero">
             <div class="hero-inner">
-                <h1><img src="{{ '/assets/images/icon.png' | relative_url}}" style="width: 1em; height: 1em; margin-right: 0.25em;">Arty</h1>
+                <div class="align-box">
+                    <img src="{{ '/assets/images/icon.png' | relative_url}}" class="icon">
+                    <h1>Arty</h1>
+                </div>
                 <h2>Boost your productivity with this all-in-one image viewer</h2>
                 <a href="#downloads" class="btn">Download now</a>
             </div>
         </section>
     </div>
 </div>
-
 <section>
     <p>Arty is an image viewer and corpus management tool for art history. Organize your images, annotate, view
         and compare, and export to Powerpoint presentation.</p>
 
-    <div style="display: inline;">
-        {% include card.html text="About" image="/assets/images/header_image_1280x895.png" alt="About"
-        link="/arty-app/about" %}
-        {% include card.html text="Documentation" image="/assets/images/header_image_1280x895.png" alt="Documentation"
-        link="/arty-app/docs" %}
+    <div class="align-box">
+        <div class="col2">
+            {% include card.html text="About" image="/assets/images/header_image_1280x895.png" alt="About"
+            link="/arty-app/about" %}
+        </div>
+        <div class="col2">
+            {% include card.html text="Documentation" image="/assets/images/header_image_1280x895.png"
+            alt="Documentation"
+            link="/arty-app/docs" %}
+        </div>
     </div>
 </section>
-
+<div class="spacer"></div>
 <section>
+    <a id="features"></a>
     <h2>Features</h2>
 
     <div class="extended-content-container" style="margin-bottom: 3em;">
-        <div class="extended-content container" style="background-color: rgb(61, 61, 61); color: white;">
+        <div class="extended-content row" style="background-color: rgb(61, 61, 61); color: white;">
             <div class="col-2 text-col">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu scelerisque nibh, in pulvinar
                     libero. Curabitur congue elit non sapien faucibus dictum. Proin vitae tempor nisi. Donec convallis
@@ -62,27 +70,26 @@ header_image: /assets/images/perspective_1024.jpg
     <p>Export your entire corpus or a selection of images to a Powerpint presentation,
         which whill be automatically captioned with the images' annotations.</p>
 </section>
-
 <section>
-    <a id="downloads">
-        <h2>Downloads</h2>
+    <a id="downloads"></a>
+    <h2>Downloads</h2>
 
-        <div class="container">
-            <div class="col-2">
-                <a href="{{ site.download_link_mac }}">
-                    <button class="download-btn">
-                        <i class="fab fa-apple"></i> <span style="margin-left: 15px">Mac OS</span>
-                    </button>
-                </a>
-            </div>
-            <div class="col-2">
-                <a href="{{ site.download_link_win }}">
-                    <button class="download-btn">
-                        <i class="fab fa-windows"></i> <span style="margin-left: 15px">Windows</span>
-                    </button>
-                </a>
-            </div>
+    <div class="container">
+        <div class="col-2">
+            <a href="{{ site.download_link_mac }}">
+                <button class="download-btn">
+                    <i class="fab fa-apple"></i> <span style="margin-left: 15px">Mac OS</span>
+                </button>
+            </a>
         </div>
-        <span class="helper">Version {{ site.app_version }}</span>
-    </a>
+        <div class="col-2">
+            <a href="{{ site.download_link_win }}">
+                <button class="download-btn">
+                    <i class="fab fa-windows"></i> <span style="margin-left: 15px">Windows</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <span class="helper">Version {{ site.app_version }}</span>
+    <div class="spacer"></div>
 </section>

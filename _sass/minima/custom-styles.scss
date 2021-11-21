@@ -34,29 +34,31 @@
     padding: 2em;
 }
 
-
 /** Responsive columns **/
 /* For mobile phones: */
-[class*="col-"] {
+.container {
     width: 100%;
 }
-.container{
-    width: 100%
+
+.row {
+    display: flex;
+}
+
+[class*="col-"] {
+    flex: 100%;
 }
 
 @media only screen and (min-width: 900px) {
-    .container{
+    .container {
         display: flex;
         flex-direction: row;
     }
     /* For desktop: */
-    .col-2{
-        width: 50%;
-        max-width: 50%;
+    .col-2 {
+        flex: 50%;
     }
-    .col-3{
-        width: 33.33%;
-        max-width: 33.33%;
+    .col-3 {
+        flex: 33.33%;
     }
 }
 
@@ -92,40 +94,43 @@ div.card-text-container {
     padding: 1em;
 }
 
+.card-text-container > p {
+    margin: 0;
+}
+
 .helper {
     color: grey;
     font-size: 10pt;
 }
-
 
 // HERO
 .hero {
     /* Sizing */
     width: 100vw;
     height: 100vh;
-    
+
     /* Flexbox stuff */
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     /* Text styles */
     text-align: center;
     color: white;
-    
+
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/arty-app/assets/images/perspective_1024.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/arty-app/assets/images/perspective_1024.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
 .hero h1 {
     /* Text styles */
     font-size: 5em;
-    
+
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
@@ -135,19 +140,42 @@ div.card-text-container {
     /* Positioning and sizing */
     display: block;
     width: 200px;
-    
+
     /* Padding and margins */
     padding: 1em;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    
+
     /* Text styles */
     color: white;
     text-decoration: none;
     font-size: 1.5em;
-    
+
     /* Border styles */
     border: 3px solid white;
     border-radius: 100px;
+
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    border: 3px solid rgb(243, 243, 243);
+    color: rgb(243, 243, 243);
+}
+
+.align-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 1em;
+}
+
+.spacer {
+    margin-bottom: 100px;
 }
