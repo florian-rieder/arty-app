@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+        <a id="back-to-top-btn"></a>
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <script type="text/javascript">
+        // https://codepen.io/matthewcain/pen/ZepbeR
+        var btn = $('#back-to-top-btn');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+
+</body>
+
+</html>
