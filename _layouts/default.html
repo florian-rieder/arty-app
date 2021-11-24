@@ -17,6 +17,7 @@
     {%- include footer.html -%}
 
     <script type="text/javascript">
+        // To Top button
         // https://codepen.io/matthewcain/pen/ZepbeR
         var btn = $('#back-to-top-btn');
 
@@ -31,6 +32,19 @@
         btn.on('click', function (e) {
             e.preventDefault();
             $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+    <script type="text/javascript">
+        // Smooth scrolling to anchors
+        // https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 

@@ -1,4 +1,5 @@
 @import "../theme-overrides.scss";
+@import "../hero.scss";
 
 .footer-nav {
     display: flex;
@@ -103,66 +104,6 @@ div.card-text-container {
     font-size: 10pt;
 }
 
-// HERO
-.hero {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Text styles */
-    text-align: center;
-    color: white;
-
-    /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("/arty-app/assets/images/perspective_1024.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.hero h1 {
-    /* Text styles */
-    font-size: 5em;
-
-    /* Margins */
-    margin-top: 0;
-    margin-bottom: 0.5em;
-}
-
-.hero .btn {
-    /* Positioning and sizing */
-    display: block;
-    width: 200px;
-
-    /* Padding and margins */
-    padding: 1em;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-    /* Text styles */
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-
-    /* Border styles */
-    border: 3px solid white;
-    border-radius: 100px;
-
-    transition: 0.3s;
-}
-
-.hero .btn:hover {
-    border: 3px solid rgb(184, 184, 184);
-    color: rgb(184, 184, 184);
-}
 
 .align-box {
     display: flex;
@@ -170,11 +111,6 @@ div.card-text-container {
     justify-content: center;
 }
 
-.icon {
-    width: 64px;
-    height: 64px;
-    margin-right: 1em;
-}
 
 .spacer {
     margin-bottom: 100px;
