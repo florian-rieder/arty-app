@@ -6,51 +6,30 @@ layout: home
 header_image: /assets/images/perspective_1024.jpg
 ---
 
-<div class="extended-content-container" style="margin-bottom: 3em; margin-top: -30px;">
+<div class="extended-content-container" style="margin-top: -30px;">
     <div class="extended-content">
-
         <section class="hero">
             <div class="hero-inner">
                 <div class="align-box">
                     <img src="{{ '/assets/images/icon.png' | relative_url}}" class="hero-icon">
                     <h1>Arty</h1>
                 </div>
-                <h2>Boost your productivity with this all-in-one image viewer</h2>
+                <p class="hero-text">Boost your productivity with this all-in-one image viewer</p>
                 <a href="#downloads" class="btn">Download now</a>
             </div>
         </section>
     </div>
 </div>
-<div class="spacer"></div>
 <section>
-    <p>Arty is an image viewer and corpus management tool for art history. Organize your images, annotate, view
-        and compare, and export to Powerpoint presentation.</p>
-
-    <div class="align-box">
-        <div class="col2">
-            {% include card.html text="About" image="/assets/images/header_image_1280x895.png" alt="About"
-            link="/arty-app/about" %}
-        </div>
-        <div class="col2">
-            {% include card.html text="Documentation" image="/assets/images/header_image_1280x895.png"
-            alt="Documentation"
-            link="/arty-app/docs" %}
-        </div>
-    </div>
-</section>
-<div class="spacer"></div>
-<section>
-    <a id="features"></a>
-    <h2>Features</h2>
-
     <div class="extended-content-container" style="margin-bottom: 3em;">
         <div class="extended-content row" style="background-color: rgb(61, 61, 61); color: white;">
             <div class="col-2 text-col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu scelerisque nibh, in pulvinar
-                    libero. Curabitur congue elit non sapien faucibus dictum. Proin vitae tempor nisi. Donec convallis
-                    est vel faucibus dapibus. Duis ipsum ligula, laoreet et convallis tincidunt, hendrerit eu purus.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Maecenas eleifend enim ac nunc tempor lacinia.</p>
+                <h1 style="font-size: 2rem">Objective</h1>
+                <p style="text-align: center; font-size: 1.2rem; margin: 1rem;">
+                    Arty is meant as an organisational tool when working with a 
+                    corpus of artworks. It aims to facilitate recurring tasks 
+                    when working with images in an academic setting.
+                </p>
             </div>
             <div class="col-2">
                 <img src="{{ '/assets/images/main_view.png' | relative_url }}" alt="Arty's main view"
@@ -58,40 +37,41 @@ header_image: /assets/images/perspective_1024.jpg
             </div>
         </div>
     </div>
+</section>
+<section>
+    <a id="features"></a>
+    <h2>Features</h2>
+    <p>
+        Arty is an image viewer and corpus management tool for art history. 
+        Main features include organizing your images, tagging, viewing and 
+        comparing, and export to Powerpoint presentation, among other options.
+    </p>
+
     <h3>Organize your images with ease</h3>
 
-    <p>Keep all of your images organized in folders on your computer. Each folder is
+    <p>
+        Keep all of your images organized in a folder on your computer. Each folder is
         a corpus of images that you can open with Arty.
-        Annotate your images with information such as artist, title, datation, etc.</p>
+        Annotate your images with information such as artist, title, datation, etc.
+    </p>
 
     <h3>Compare</h3>
     <p>Compare up to 4 images at a time.</p>
 
     <h3>Export corpus to Powerpoint</h3>
-    <p>Export your entire corpus or a selection of images to a Powerpint presentation,
-        which whill be automatically captioned with the images' annotations.</p>
+    <p>
+        Export your entire corpus or a selection of images to a Powerpint presentation,
+        which whill be automatically captioned with the images' annotations.
+    </p>
+    <p>
+        For more advanced uses, a corpus can also be exported to CSV, and the application's
+        collection file (.arty extension) is itself a JSON document
+    </p>
 </section>
 <div class="spacer"></div>
 <section>
     <a id="downloads"></a>
     <h2>Downloads</h2>
-
-    <div class="container">
-        <div class="col-2">
-            <a href="{{ site.download_link_mac }}">
-                <button class="download-btn">
-                    <i class="fab fa-apple"></i> <span style="margin-left: 15px">Mac OS</span>
-                </button>
-            </a>
-        </div>
-        <div class="col-2">
-            <a href="{{ site.download_link_win }}">
-                <button class="download-btn">
-                    <i class="fab fa-windows"></i> <span style="margin-left: 15px">Windows</span>
-                </button>
-            </a>
-        </div>
-    </div>
-    <span class="helper">Version {{ site.app_version }}</span>
+    {% include downloads.html%}
     <div class="spacer"></div>
 </section>

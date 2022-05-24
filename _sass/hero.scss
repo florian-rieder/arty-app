@@ -33,7 +33,7 @@
     .btn {
         /* Positioning and sizing */
         display: block;
-        width: 200px;
+        width: 8em;
     
         /* Padding and margins */
         padding: 1em;
@@ -44,7 +44,8 @@
         /* Text styles */
         color: white;
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 2rem;
+        font-weight: 500;
     
         /* Border styles */
         border: 3px solid white;
@@ -62,5 +63,9 @@
         width: 80px;
         height: 80px;
         margin-right: 1em;
+    }
+
+    .hero-text {
+        font-size: 1.5em;
     }
 }

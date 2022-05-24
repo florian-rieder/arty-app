@@ -15,24 +15,30 @@
     cursor: pointer;
     background-color: $arty-primary-color;
 
+    /* Box styles */
     width: 95%;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-bottom: 1em;
 
+    /* Border styles */
     border: 1px solid $arty-dark-color;
     border-radius: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-    font-size: 3em;
+    /* Text styles */
+    font-size: 2em;
     color: white;
     font-weight: 500;
     letter-spacing: -1pt;
-
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .text-col {
-    padding: 2em;
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /** Responsive columns **/
